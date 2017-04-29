@@ -56,7 +56,7 @@
           <form class="login-form">
             <input type="text" placeholder="Username" id="username" name="username" maxlength="12">
             <input type="password" placeholder="Password" id="password" name="password" maxlength="12">
-            <button type="submit" id="signin" name="signin" onclick="create()">Login</button>
+            <button type="submit" id="signin" name="signin">Login</button>
           </form>
         </div>
       </form>
@@ -96,12 +96,5 @@
     <script type="text/javascript" src="js/cache.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/signin.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script type="text/javascript">
-    function create() {
-      $.cookie('keep', 'user data');
-      console.log($.cookie('keep'));
-    }
-    </script>
   </body>
   </html>

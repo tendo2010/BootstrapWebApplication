@@ -57,9 +57,9 @@ $().ready(function() {
   });
 });
 $("#signin").click(function() {
-  var url = "http://membershipwebapi977290.azurewebsites.net/api/Members/signin?";
-  url += "username=" + $("#username").val();
-  url += "&password=" + $("#password").val();
+  var username = $("#username").val();
+  var password = $("#password").val();
+  var url = "http://membershipwebapi977290.azurewebsites.net/api/members/signin?username=" + username + "&password=" + password;
   console.log(url);
   $.get(url, function(data, status) {
     console.log(data);

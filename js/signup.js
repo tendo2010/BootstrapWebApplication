@@ -105,7 +105,7 @@ $("#signup").click(function() {
   newuser.email = $("#email").val();
   newuser.tel = $("#tel").val();
   console.log(newuser);
-  var url = "http://membershipwebapi977290.azurewebsites.net/api/Members";
+  var url = "http://membershipwebapi977290.azurewebsites.net/api/Members/";
   $.post(url, newuser, function(data, status) {
     console.log("Inserted " + data);
   });
